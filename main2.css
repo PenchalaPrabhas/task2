@@ -1,0 +1,53 @@
+body {
+    background-color: bisque;
+    background-size:cover;
+    font-family:sans-serif;
+}
+
+.container{
+    width:400;
+    margin:25%;
+    overflow:hidden;
+    padding:1rem;
+    background-color:#fff;
+    border-radius:10px;
+    text-align:center;
+    margin-top:3%;
+}
+
+.hr{
+    width:99%;
+}
+
+.fb{
+    padding:0.8rem 2rem;
+    color:#fff;
+    background-color:#191970;
+    border:none;
+    border-radius:5px;
+}
+
+.a{
+    text-decoration:none;
+}
+
+.container input{
+    padding:0.5rem;
+    width:40%;
+    box-shadow: 0 0 10px red;
+}
+
+.container input[type=checkbox]{
+    width:auto;
+}
+
+.btn{
+    margin:auto;
+    padding:1rem;
+    color:#fff;
+    background-color:#191970;
+    font-size:1rem;
+    width:40%;
+    border-radius:7px;
+    border:none;
+}

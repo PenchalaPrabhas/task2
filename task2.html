@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+
+        <title>Sign Up Page</title>
+        <link rel="stylesheet" href="main2.css"></link>
+    </head>
+    <body>
+       
+        
+           <form action="user.php" method="GET">
+       
+            <div class="container">
+        <h1> login</h1>
+            
+                <input name="username"  type="text" placeholder="User name"><br /><br />
+                
+                <input  name="password" type="password" placeholder="Password"><br /><br />
+                <input type="checkbox">I agree with<a href="#">Terms & Conditions</a>&<a href="#">Privacy of service</a><br /><br />
+               <input type="submit" value="Submit" class="btn">
+                <br /><br />
+                <hr />
+            <br />
+            <h1>Create an Account</h1>
+            <a href="register.html"><p class="btn"> Click to create an account</p></a>
+           
+            
+            
+                
+            </form>
+        </div>
+        <?php
+ include("phpfile.php");
+    if(isset($_GET['username'])){
+        $username = $_GET['username'];
+        $password = $_GET['password'];
+        $result = mysqli_query($mysqli,"SELECT * FROM register WHERE username='$username' AND password='$password'");
+        if(mysqli_num_rows($result)==1){
+            echo "Login Successful";
+        }
+        else{
+            echo "Login Failed";
+        }
+    }
+ ?>
+</body>
+</html>

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: white;
+  }
+  
+.conteiner {
+    position: center;
+    top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    right: 0;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 20px;
+    background-image: linear-gradient(to top, #61ec1b 0%, #f9683c 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main1 {
+    margin-left: 390px;
+    margin-right: 390px;
+    margin-bottom: 15px;
+    background-color: rgb(252, 201, 201);
+}
+label {
+    color: rgb(59, 24, 24);
+    background-color: pink;
+}
+
+#input1:focus,#input2:focus ,#input3:focus,#input4:focus,#input4:focus
+{
+    border-color: pink;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
